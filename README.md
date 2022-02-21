@@ -18,7 +18,7 @@ Topics:
 * [X] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
 * [X] Still inside the `client` folder run `npm start` to run the client application.
 
-* [ ] Once your application is up and running on the client, you should see a browser window that looks like [this](https://tk-assets.lambdaschool.com/c6b3e8d8-afe0-4663-82da-60b1de76f649_movies-home.png) at `localhost:3000` (although the port number will be different if 3000 is not being used).
+* [X] Once your application is up and running on the client, you should see a browser window that looks like [this](https://tk-assets.lambdaschool.com/c6b3e8d8-afe0-4663-82da-60b1de76f649_movies-home.png) at `localhost:3000` (although the port number will be different if 3000 is not being used).
 
 ### Task 2: MVP
 
@@ -26,14 +26,14 @@ Topics:
 
 Once you are done your application will have two routes:
 
-* [ ] [Screenshot of route '/'](https://tk-assets.lambdaschool.com/b9ced241-681f-432a-9047-ef2ba7e34946_first-route.png)
+* [X] [Screenshot of route '/'](https://tk-assets.lambdaschool.com/b9ced241-681f-432a-9047-ef2ba7e34946_first-route.png)
 * [ ] [Screenshot of route '/movies/:id'](https://tk-assets.lambdaschool.com/06f9f448-2804-4b4a-9408-41904af96a4e_second-route.png)
 
 #### Set up Routes
 
 * [X] Wrap your app with the router.
-* [ ] Inside your App file add two routes.
-  * [ ] one route for `/` that loads the `MovieList` component. This component will need the movies injected into it via props.
+* [X] Inside your App file add two routes.
+  * [X] one route for `/` that loads the `MovieList` component. This component will need the movies injected into it via props.
   * [ ] one route that will take an `id` parameter after`/movies/` (ex: `/movies/2`, `/movies/3` where the id is dynamic). This route should load the `Movie` component.
 
 #### Add Functionality
