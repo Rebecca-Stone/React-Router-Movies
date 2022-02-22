@@ -1,5 +1,6 @@
 import React from "react";
 
+// imported link to allow us to set the url 
 import { Link } from "react-router-dom";
 
 export default function MovieList(props) {
@@ -17,6 +18,7 @@ function MovieDetails(props) {
 
   return (
     <div className="movie-card">
+      {/* added a link wrapper */}
       <Link to={`/movies/${props.movie.id}`}>
         <h2>{title}</h2>
         <div className="movie-director">

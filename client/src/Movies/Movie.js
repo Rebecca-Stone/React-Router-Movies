@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+//imported useParams to get data from the url
 import { useParams } from "react-router-dom";
 
 export default function Movie(props) {
@@ -14,18 +15,23 @@ export default function Movie(props) {
       .get(`http://localhost:5001/api/movies/${id}`) // Study this endpoint with Postman
       .then((response) => {
         // Study this response with a breakpoint or log statements
+        console.log(response);
         setMovie(response.data);
+        
         // and set the response data as the 'movie' slice of state
       })
       .catch((error) => {
         console.error(error);
       });
-    // This effect should run every time time
+    // This effect should run every time
     // the `id` changes... How could we do this?
-  }, []);
+    // console.log(movie);
+  }, [id]);
 
   // Uncomment this only when you have moved on to the stretch goals
   // const saveMovie = evt => { }
+
+  
 
   if (!movie) {
     return <div>Loading movie information...</div>;
